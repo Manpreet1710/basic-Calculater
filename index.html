@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic-Calculater-using Javascriptś</title>
+	<style>
+		*{text-transform: uppercase; color:#fff;}
+		body{
+			background: hsl(0, 0%, 25%);
+		}
+		.container{
+			width: auto;
+			border: solid 1px #000;
+		    text-align: center;
+		    position: absolute;
+		    left: 50%;
+		    top: 50%;
+		    transform: translate(-50%, -50%);
+		}
+		input[type=text]{
+			width: 185px;
+			padding: 14px;
+			border: none;
+			outline: none;
+			background: rgb(38, 38, 38);
+
+		}
+		input[type=button]{
+			width: 215px;
+			padding: 12px;
+			background: rgb(38, 38, 38);
+			border: none;
+			outline: none;
+		}
+		button{
+			width: 50px;
+			height: 10vh;
+			background: rgb(13, 13, 13);
+			border: none;
+			outline: none;
+		}
+		input::placeholder{
+			text-align: center;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<form name="forms">
+	<input type="text" placeholder="Calculater" name="txt" id="demo">
+
+	<br><br>
+	<button type="button" onclick="forms.txt.value += '7' ">7</button>
+	<button type="button" onclick="forms.txt.value += '8' ">8</button>
+	<button type="button" onclick="forms.txt.value += '9' ">9</button>
+	<button type="button" onclick="forms.txt.value += '*' ">*</button>
+
+	<br><br>
+
+	<button type="button" onclick="forms.txt.value += '4' ">4</button>
+	<button type="button" onclick="forms.txt.value += '5' ">5</button>
+	<button type="button" onclick="forms.txt.value += '6' ">6</button>
+	<button type="button" onclick="forms.txt.value += '-' ">-</button>
+
+	<br><br>
+
+	<button type="button" onclick="forms.txt.value += '1' ">1</button>
+	<button type="button" onclick="forms.txt.value += '2' ">2</button>
+	<button type="button" onclick="forms.txt.value += '3' ">3</button>
+	<button type="button" onclick="forms.txt.value += '+' ">+</button>
+
+	<br><br>
+
+	<button type="button" onclick="forms.txt.value += '/' ">/</button>
+	<button type="button" onclick="forms.txt.value += '0' ">0</button>
+	<button type="button" onclick="forms.txt.value += '.' ">.</button>
+	<button type="button" onclick="forms.txt.value = eval(forms.txt.value)">=</button>
+
+    <br> <br>
+	<input type="button" value="Clear all" onclick="forms.txt.value='' ">	
+</form>
+</div>
+</body>
+</html>
